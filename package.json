@@ -10,7 +10,6 @@
     "pack-p": "enact pack -p && cp -r assets dist/",
     "package": "npm run pack && ares-package dist/",
     "package-p": "npm run pack-p && ares-package dist/",
-    "install": "ares-install ${npm_package_name}_${npm_package_version}_all.ipk",
     "inspect": "ares-inspect --app ${npm_package_name}",
     "watch": "enact pack --watch",
     "clean": "enact clean && rm -f *.ipk",
