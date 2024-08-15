@@ -123,15 +123,18 @@ const SoundModeApp: React.FC = () => {
     }
 
     return (<Panel>
+        {/* eslint-disable-next-line */}
         <Header title="Sound Mode Fix Settings" onClose={closeApp}/>
         {loading ? (<>
             <Spinner centered component="div">Loading...</Spinner>
         </>) : rooted ? (<Scroller>
             <div style={{paddingBottom: "100px"}}>
                 <br/>
+                {/* eslint-disable-next-line */}
                 <SwitchItem selected={enabled} onToggle={handleEnabledChange} disabled={loading}>
                     Force sound mode
                 </SwitchItem>
+                {/* eslint-disable-next-line */}
                 <SwitchItem selected={showPopups} onToggle={handleShowPopupsChange} disabled={loading || !enabled}>
                     Display a notification when the sound mode is changed
                 </SwitchItem>
@@ -142,12 +145,14 @@ const SoundModeApp: React.FC = () => {
                         <Dropdown title="Forced sound mode"
                                   disabled={!enabled}
                                   selected={Object.keys(soundModeToName).indexOf(soundMode)}
+                                  // eslint-disable-next-line
                                   onSelect={(e) => handleSoundModeChange(Object.values(nameToSoundMode)[e.selected])}
                                   size="large" width="large">
                             {Object.keys(nameToSoundMode)}
                         </Dropdown>
                     </Cell>
                     <Cell component="div" align="end" shrink>
+                        {/* eslint-disable-next-line */}
                         <Button onClick={saveSettings} disabled={loading}>
                             Save Settings
                         </Button>
