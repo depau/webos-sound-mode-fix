@@ -27,7 +27,7 @@ jobs:
       - name: Install dependencies
         run: |
           npm ci
-          npm install @enact/cli   # Install separately since it has buggy packaging
+          npm install @webos-tools/cli @enact/cli
 
       - name: Build
         run: |
