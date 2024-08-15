@@ -1,0 +1,67 @@
+{
+  "name": "eu.depau.webos.soundmodefix",
+  "version": "1.0.0",
+  "description": "A general template for an Enact Sandstone application.",
+  "author": "",
+  "main": "src/index.tsx",
+  "scripts": {
+    "serve": "enact serve",
+    "pack": "enact pack && cp -r assets dist/",
+    "pack-p": "enact pack -p && cp -r assets dist/",
+    "package": "npm run pack && ares-package dist/",
+    "package-p": "npm run pack-p && ares-package dist/",
+    "install": "ares-install ${npm_package_name}_${npm_package_version}_all.ipk",
+    "inspect": "ares-inspect --app ${npm_package_name}",
+    "watch": "enact pack --watch",
+    "clean": "enact clean && rm -f *.ipk",
+    "lint": "enact lint .",
+    "license": "enact license",
+    "test": "enact test",
+    "manifest": "node tools/gen-manifest.js ${npm_package_name}.manifest.json",
+    "appinfo": "node tools/sync-appinfo.js && git add appinfo.json",
+    "test-watch": "enact test --watch",
+    "simulator": "ares-launch -s 24 dist/"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/depau/webos-sound-mode-fix.git"
+  },
+  "enact": {
+    "theme": "sandstone"
+  },
+  "eslintConfig": {
+    "extends": "enact-proxy"
+  },
+  "eslintIgnore": [
+    "node_modules/*",
+    "build/*",
+    "dist/*"
+  ],
+  "dependencies": {
+    "@enact/core": "^4.8.0",
+    "@enact/i18n": "^4.8.0",
+    "@enact/sandstone": "^2.8.0",
+    "@enact/spotlight": "^4.8.0",
+    "@enact/ui": "^4.8.0",
+    "@enact/webos": "^4.9.0",
+    "@types/node": "^20.11.5",
+    "@types/react": "^18.2.48",
+    "ilib": "^14.19.0",
+    "mkdirp": "^3.0.1",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.5.4",
+    "web-vitals": "^3.5.1",
+    "webostvjs": "^1.2.5"
+  },
+  "devDependencies": {
+    "@enact/cli": "^6.1.2",
+    "@enact/jsdoc-to-ts": "^1.0.6",
+    "@types/react-dom": "^18.3.0",
+    "eslint-config-enact-proxy": "^1.0.7",
+    "punycode": "^2.3.1"
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "id": "eu.depau.webos.soundmodefix",
+    "version": "1.0.0",
+    "vendor": "Davide Depau",
+    "type": "web",
+    "main": "index.html",
+    "title": "Sound Mode Fix",
+    "appDescription": "Force the TV sound mode to stay on the one you want",
+    "icon": "assets/icon80.png",
+    "largeIcon": "assets/icon130.png",
+    "iconColor": "#023436"
+}
