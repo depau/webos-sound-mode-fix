@@ -39,11 +39,11 @@
     "dist/*"
   ],
   "dependencies": {
-    "@enact/core": "^4.8.0",
-    "@enact/i18n": "^4.8.0",
-    "@enact/sandstone": "^2.8.0",
-    "@enact/spotlight": "^4.8.0",
-    "@enact/ui": "^4.8.0",
+    "@enact/core": "^4.9.0",
+    "@enact/i18n": "^4.9.0",
+    "@enact/sandstone": "^2.9.0",
+    "@enact/spotlight": "^4.9.0",
+    "@enact/ui": "^4.9.0",
     "@enact/webos": "^4.9.0",
     "@types/node": "^20.11.5",
     "@types/react": "^18.2.48",
@@ -57,10 +57,8 @@
     "webostvjs": "^1.2.5"
   },
   "devDependencies": {
-    "@enact/cli": "^6.1.2",
     "@enact/jsdoc-to-ts": "^1.0.6",
     "@types/react-dom": "^18.3.0",
-    "eslint-config-enact-proxy": "^1.0.7",
     "punycode": "^2.3.1"
   }
 }
